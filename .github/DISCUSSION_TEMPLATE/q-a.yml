@@ -1,0 +1,38 @@
+{
+  "title": "[Question] ",
+  "body": [
+    {
+      "type": "input",
+      "id": "post",
+      "attributes": {
+        "label": "Related topic or post link",
+        "description": "Link the note, or name the concept you are asking about."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "question",
+      "attributes": {
+        "label": "What is your question?",
+        "description": "Explain what is unclear and which part you would like unpacked."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "understanding",
+      "attributes": {
+        "label": "What have you understood or tried so far?",
+        "description": "Optional context helps others give a useful answer."
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

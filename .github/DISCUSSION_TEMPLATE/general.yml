@@ -1,0 +1,49 @@
+{
+  "title": "[Discussion] ",
+  "body": [
+    {
+      "type": "input",
+      "id": "topic",
+      "attributes": {
+        "label": "Topic or related post",
+        "description": "Name the topic or paste a link."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "discussion",
+      "attributes": {
+        "label": "What would you like to discuss?",
+        "description": "Share a tradeoff, experience, alternative approach or assumption to examine."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "context",
+      "attributes": {
+        "label": "Context and examples",
+        "description": "Include relevant constraints or sources without private data."
+      },
+      "validations": {
+        "required": false
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "invite",
+      "attributes": {
+        "label": "What would you like to hear from others?",
+        "description": "Invite comparisons, suggestions or real-world experiences."
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}

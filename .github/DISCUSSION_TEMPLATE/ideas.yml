@@ -1,0 +1,38 @@
+{
+  "title": "[Topic idea] ",
+  "body": [
+    {
+      "type": "input",
+      "id": "topic",
+      "attributes": {
+        "label": "What topic should we explore?",
+        "description": "Give your idea a short, descriptive name."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "why",
+      "attributes": {
+        "label": "What would you like to understand?",
+        "description": "Describe the problem, comparison or practical use case."
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "context",
+      "attributes": {
+        "label": "Examples or useful links",
+        "description": "Optional sources, scenarios or diagram suggestions."
+      },
+      "validations": {
+        "required": false
+      }
+    }
+  ]
+}
