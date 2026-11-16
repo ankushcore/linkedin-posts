@@ -1,0 +1,49 @@
+📘 AI Agents + Kubernetes: Benefits, Risks and Guardrails
+
+A production alert rarely tells the whole story.
+The evidence may be spread across logs, metrics, deployment history and tickets. Connecting that context takes time.
+
+That is where an AI agent can help: gather evidence, choose investigation tools and propose a next step. Its value still depends on the data, permissions and quality of its findings.
+
+🤔 First, two different ideas
+• An agent FOR Kubernetes helps operate a cluster.
+• An agent ON Kubernetes runs its own workload there.
+You can choose either—or both.
+
+🛠️ What kinds of agents can teams use?
+1) Incident/SRE agents: correlate symptoms and recent changes to reduce manual triage.
+2) DevSecOps agents: explain security findings and propose fixes for review.
+3) Delivery/platform agents: draft manifests, pipeline changes or pull requests.
+4) Cost/capacity agents: examine usage and suggest right-sizing.
+Coding agents can also use isolated Kubernetes environments to run tools and tests.
+
+These are potential benefits, not guarantees of accuracy or savings. Keep scripts and controllers for predictable work.
+
+☸️ Why host an agent on Kubernetes?
+It offers scheduling, workload lifecycle management, deployment policies, quotas and familiar observability. The model itself can remain behind an external endpoint. For a small workflow, Kubernetes may add unnecessary complexity.
+
+⚠️ What changes when the agent has tools?
+A misleading log entry can become a harmful tool request. A wrong diagnosis can become a production change. Read-only access can leak sensitive data, and uncontrolled loops can consume API budget.
+
+🛡️ Manage those risks outside the model
+• Dedicated identity; least-privilege RBAC and cloud IAM.
+• Isolation suited to the code being executed.
+• Controlled egress and narrowly defined tools.
+• Sanitized context, task deadlines and API budgets.
+• Exact-action approval before production changes.
+• Auditable outcomes, cancellation and tested rollback.
+
+Example: investigate checkout latency → propose an exact rollback → human review → a separate scoped executor acts and verifies.
+
+The two attached handwritten-style pages explain the benefits first, then the risks and safeguards.
+
+Where would you start: incident investigation, security review, delivery or cost analysis?
+
+For more such posts and illustrated notes, visit: https://github.com/ankushcore/linkedin-posts
+
+#Kubernetes #DevOps #DevSecOps #SRE #AIAgents
+
+Sources:
+https://agent-sandbox.sigs.k8s.io/docs/
+https://kubernetes.io/docs/concepts/security/rbac-good-practices/
+https://kubernetes.io/docs/concepts/services-networking/network-policies/
