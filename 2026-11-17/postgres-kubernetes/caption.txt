@@ -5,7 +5,7 @@ Your application runs on Kubernetes. Should its database move there too?
 Sometimes—but the decision needs more than a working deployment.
 
 📌 Why this matters now
-CloudNativePG became a CNCF Incubating project on 10 November 2026. It is a timely reason to revisit database operations on Kubernetes, not a guarantee that every workload belongs there.
+CNCF announced CloudNativePG’s incubation on 10 November 2026. It is a timely reason to revisit database operations on Kubernetes, not a guarantee that every workload belongs there.
 
 🔎 What does an operator do?
 An operator such as CloudNativePG turns a declarative database configuration into managed PostgreSQL instances and automates lifecycle tasks, including failover.
