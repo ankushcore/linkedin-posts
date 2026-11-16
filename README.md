@@ -27,18 +27,18 @@ Replication and backups solve different problems. These notes explain the archit
 - Weigh operational control against the work your team must own.
 - Connect each risk to a safeguard—and test whether recovery meets your targets.
 
-[**Page 1: Architecture & decisions →**](2026-11-17-postgres-kubernetes-notes-page-1.png) · [**Page 2: Risks & recovery →**](2026-11-17-postgres-kubernetes-notes-page-2.png)
+[**Page 1: Architecture & decisions →**](2026-11-17/postgres-kubernetes/notes-page-1.png) · [**Page 2: Risks & recovery →**](2026-11-17/postgres-kubernetes/notes-page-2.png)
 
-<a href="2026-11-17-postgres-kubernetes-notes-page-1.png"><img src="2026-11-17-postgres-kubernetes-notes-page-1.png" alt="PostgreSQL on Kubernetes: three-zone architecture and comparison with managed databases" width="600"></a>
+<a href="2026-11-17/postgres-kubernetes/notes-page-1.png"><img src="2026-11-17/postgres-kubernetes/notes-page-1.png" alt="PostgreSQL on Kubernetes: three-zone architecture and comparison with managed databases" width="600"></a>
 
 <details>
 <summary><strong>See the risk-management and recovery page</strong></summary>
 
-![PostgreSQL risks, safeguards, failover and recovery checklist](2026-11-17-postgres-kubernetes-notes-page-2.png)
+![PostgreSQL risks, safeguards, failover and recovery checklist](2026-11-17/postgres-kubernetes/notes-page-2.png)
 
 </details>
 
-[Read the post](2026-11-17-postgres-kubernetes-caption.txt) · [Check the sources](2026-11-17-postgres-kubernetes-sources.md)
+[Read the post](2026-11-17/postgres-kubernetes/caption.txt) · [Check the sources](2026-11-17/postgres-kubernetes/sources.md)
 
 *17 November 2026 · Database reliability · Kubernetes · Disaster recovery*
 
@@ -54,18 +54,18 @@ Explore the difference between agents that operate Kubernetes and agents hosted 
 - Understand prompt injection, excessive permissions and runaway tool use.
 - Design controls outside the model: scoped identities, isolation, approval and rollback.
 
-[**Page 1: Why agents & which types →**](2026-11-16-secure-agents-notes-page-1.png) · [**Page 2: Risks & guardrails →**](2026-11-16-secure-agents-notes-page-2.png)
+[**Page 1: Why agents & which types →**](2026-11-16/secure-agents/notes-page-1.png) · [**Page 2: Risks & guardrails →**](2026-11-16/secure-agents/notes-page-2.png)
 
-<a href="2026-11-16-secure-agents-notes-page-1.png"><img src="2026-11-16-secure-agents-notes-page-1.png" alt="AI agent types, potential benefits and Kubernetes hosting considerations" width="600"></a>
+<a href="2026-11-16/secure-agents/notes-page-1.png"><img src="2026-11-16/secure-agents/notes-page-1.png" alt="AI agent types, potential benefits and Kubernetes hosting considerations" width="600"></a>
 
 <details>
 <summary><strong>See the risks and guardrails page</strong></summary>
 
-![AI agent risks, safeguards and a controlled incident-response flow](2026-11-16-secure-agents-notes-page-2.png)
+![AI agent risks, safeguards and a controlled incident-response flow](2026-11-16/secure-agents/notes-page-2.png)
 
 </details>
 
-[Read the post](2026-11-16-secure-agents-caption.txt) · [Check the sources](2026-11-16-secure-agents-sources.md)
+[Read the post](2026-11-16/secure-agents/caption.txt) · [Check the sources](2026-11-16/secure-agents/sources.md)
 
 *16 November 2026 · SRE · DevSecOps · AI agents*
 
@@ -77,7 +77,7 @@ Explore the difference between agents that operate Kubernetes and agents hosted 
 
 Each explanation combines a practical example, readable diagrams and sources you can explore further. Benefits come with tradeoffs; illustrative targets are not production guarantees.
 
-Everything lives in this repository's main directory. Filenames start with the content date and topic, so notes, captions and sources are easy to match. The visuals are digitally generated in a handwritten style and reviewed for clarity and technical accuracy.
+Browse by content date, then topic: `YYYY-MM-DD/post-name/`. Each post folder contains its illustrated notes, caption, sources and supporting files. The visuals are digitally generated in a handwritten style and reviewed for clarity and technical accuracy.
 
 ## Keep exploring
 
