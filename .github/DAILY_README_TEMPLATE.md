@@ -32,6 +32,6 @@ One short, sharp opening line tied to the technical problem.
 
 <!-- Use concise technical bullets and direct inline primary-source links. -->
 
-## LinkedIn post
+## Illustrated notes
 
-<!-- Include the complete prepared caption, hashtags and repository link. Record publication status accurately. Keep caption.txt synchronized. -->
+<!-- Embed the finished note images directly using relative Markdown image links. Do not include a LinkedIn caption section or image-prompt/status files in daily folders. -->

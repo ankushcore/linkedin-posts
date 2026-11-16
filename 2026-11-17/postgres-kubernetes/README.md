@@ -80,56 +80,8 @@ Base backup + continuous WAL archive
 - [Barman Cloud plugin](https://cloudnative-pg.io/plugin-barman-cloud/docs/usage/) — practical backup integration.
 - [Monitoring reference](https://www.postgresql.org/docs/current/monitoring-stats.html) — database and replication statistics.
 
-## LinkedIn post
+## Illustrated notes
 
-Draft for review; not scheduled or published. The prepared social caption is reproduced below, including its original formatting and hashtags. [Copy-ready caption](caption.txt)
+![Postgres Kubernetes — page 1](notes-page-1.png)
 
-```text
-Should you run PostgreSQL inside Kubernetes? 🐘 ☸️
-
-Your application runs on Kubernetes. Should its database move there too?
-
-Sometimes—but the decision needs more than a working deployment.
-
-📌 Why this matters now
-CNCF announced CloudNativePG’s incubation on 10 November 2026. It is a timely reason to revisit database operations on Kubernetes, not a guarantee that every workload belongs there.
-
-🔎 What does an operator do?
-An operator such as CloudNativePG turns a declarative database configuration into managed PostgreSQL instances and automates lifecycle tasks, including failover.
-
-Kubernetes handles workload orchestration. PostgreSQL handles data. Your team still owns reliability.
-
-✅ When it can help
-• Repeatable provisioning and GitOps workflows.
-• Infrastructure control across cloud and on-premises environments.
-• A common operating approach for teams already skilled in Kubernetes AND PostgreSQL.
-
-A small team should also evaluate managed PostgreSQL. Compare the full cost: compute, storage, replicas, backups, engineering and on-call—not just the database bill.
-
-⚠️ A real-world example
-Imagine your checkout database has a primary and two standbys across three zones.
-
-If the primary fails, the operator can promote an eligible standby and redirect the write service. Applications still need to reconnect and handle uncertain transactions safely.
-
-But if someone accidentally deletes the orders table, replication can carry that mistake to the standbys.
-
-High availability and recovery from bad data changes are different problems.
-
-🛠️ How do we manage the risks?
-• Configure failure-domain placement and test failover.
-• Choose replication settings against acceptable data loss; asynchronous replication can lag, while synchronous replication can add latency or block writes.
-• Protect backups outside the cluster and continuously archive WAL—the write-ahead log.
-• Practise point-in-time recovery into an isolated cluster.
-• Monitor disk space, query latency, connections, replication lag and backup health.
-• Use least privilege, TLS, restricted networking and tested upgrade procedures.
-
-Define your RPO (acceptable data loss) and RTO (acceptable recovery time), then measure whether recovery drills meet them.
-
-The attached notes cover the architecture, operating-model choices, risks and safeguards.
-
-What would make you choose PostgreSQL on Kubernetes over a managed database?
-
-For more such posts and illustrated notes, visit: https://github.com/ankushcore/linkedin-posts
-
-#DevOps #SRE #PostgreSQL #Kubernetes #CloudNativePG #Database #DatabaseReliability #DatabaseAdministration #CloudNative #PlatformEngineering #GitOps #HighAvailability #DisasterRecovery #Observability #DevSecOps
-```
+![Postgres Kubernetes — page 2](notes-page-2.png)

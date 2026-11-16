@@ -25,7 +25,7 @@ Pick a topic to open its notes, caption and sources. New entries are added here 
 | 16 Nov 2026 | AI Agents and Kubernetes: uses, risks & safeguards | [Read the notes →](2026-11-16/secure-agents/) |
 <!-- TOPIC_INDEX_END -->
 
-*Organized as `YYYY-MM-DD/post-name/`. Dates are content dates; each folder records its LinkedIn publication status.*
+*Organized as `YYYY-MM-DD/post-name/`. Dates are content dates.*
 
 ## What you will find in every topic
 
