@@ -1,0 +1,17 @@
+GitHub announced on-demand secret scanning for developers and agents on 17 November, in public preview.
+
+Here’s what it does—and how to use it:
+
+• What: Checks code changes for exposed secrets during Copilot security review.
+• Why: Catch credentials before human-written or AI-generated code is merged.
+• Where: Copilot CLI, app, SDK integrations and code review.
+• How: In Copilot CLI, run /settings aiSecretDetection on, then /security-review.
+• Limits: Opt-in, consumes AI credits, and checks changes—not repository history.
+• Safeguards: Treat scans as one layer. Revoke exposed credentials, replace them securely and review findings before merge.
+
+Where do you check for secrets today: locally, in CI or during PR review?
+
+For more such posts and illustrated notes, visit: https://github.com/ankushcore/linkedin-posts
+Find detailed explanations, setup steps, diagrams, risks, safeguards and verified sources—and bring your questions to Discussions.
+
+#DevOps #DevSecOps #SRE #GitHub #GitHubCopilot #SecretScanning #SecretManagement #ApplicationSecurity #CloudSecurity #CICD #PlatformEngineering #SecureCoding #AIAgents #CyberSecurity #SoftwareEngineering
