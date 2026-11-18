@@ -21,6 +21,7 @@ Pick a topic to open its notes, caption and sources. New entries are added here 
 <!-- TOPIC_INDEX_START -->
 | Date | Topic | Explore |
 | --- | --- | --- |
+| 18 Nov 2026 | On-demand secret scanning: setup, limits & credential response | [Read the notes →](2026-11-18/on-demand-secret-scanning/) |
 | 17 Nov 2026 | PostgreSQL on Kubernetes: architecture, tradeoffs & recovery | [Read the notes →](2026-11-17/postgres-kubernetes/) |
 | 16 Nov 2026 | AI Agents and Kubernetes: uses, risks & safeguards | [Read the notes →](2026-11-16/secure-agents/) |
 <!-- TOPIC_INDEX_END -->
