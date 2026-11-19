@@ -1,0 +1,17 @@
+AWS announced general availability of private AWS–Azure connectivity through Interconnect – multicloud on 17 November.
+
+Here’s what changes—and what you still need to design:
+
+• What: A managed private connection between AWS and Azure, outside the public internet.
+• Why: Support cross-cloud applications, data movement and phased migrations with less connectivity assembly.
+• How: Pair the providers using an activation key, attach your cloud networks and configure routes.
+• Security: Provider-link MACsec protects the interconnect. Keep application TLS and least-privilege access.
+• Risks: Overlapping IP ranges, broken DNS, route mistakes, latency and unexpected costs.
+• Safeguards: Plan addressing, test name resolution, monitor both ends and rehearse recovery.
+
+What would you validate first: routing, DNS or failover?
+
+For more such posts and illustrated notes, visit: https://github.com/ankushcore/linkedin-posts
+Find the architecture, setup guidance, risks, safeguards and verified sources. Bring your questions to Discussions.
+
+#DevOps #SRE #Cloud #AWS #Azure #MultiCloud #CloudNetworking #NetworkEngineering #CloudArchitecture #DevSecOps #CloudSecurity #PlatformEngineering #Observability #DisasterRecovery #FinOps
